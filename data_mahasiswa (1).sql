@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 08, 2014 at 03:23 AM
+-- Generation Time: Oct 08, 2014 at 03:49 AM
 -- Server version: 5.5.25a
 -- PHP Version: 5.4.4
 
@@ -26,7 +26,6 @@ SET time_zone = "+00:00";
 -- Table structure for table `mahasiswa`
 --
 
-DROP TABLE IF EXISTS `mahasiswa`;
 CREATE TABLE IF NOT EXISTS `mahasiswa` (
   `nim` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `nama` varchar(100) DEFAULT NULL,
@@ -52,7 +51,6 @@ INSERT INTO `mahasiswa` (`nim`, `nama`, `alamat`, `prodi`) VALUES
 -- Table structure for table `user`
 --
 
-DROP TABLE IF EXISTS `user`;
 CREATE TABLE IF NOT EXISTS `user` (
   `username` varchar(50) DEFAULT NULL,
   `password` varchar(50) DEFAULT NULL
@@ -63,7 +61,8 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`username`, `password`) VALUES
-('aziz', '123');
+('aziz', '123'),
+('admin', '21232f297a57a5a743894a0e4a801fc3');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
