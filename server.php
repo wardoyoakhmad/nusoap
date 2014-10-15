@@ -23,7 +23,7 @@
 		$password = md5($password);
 		//buat koneksi
 		$db = NewADOConnection('mysql');
-		$db->Connect('localhost', 'root','','data_mahasiswa');
+		$db->Connect('localhost', 'root','','mahasiswa');
 		//cek username dan password
 		$sql = $db->Execute("SELECT * FROM user where username='$username' AND password='$password'");
 		
